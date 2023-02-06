@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>Institute Registration</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../images/logo.png" alt=""></a>
+      <button justify-content-end class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Registration</a>
+            <div class="dropdown-menu">
+              <a href="../player registration/playernew.html" class="dropdown-item">Player
+                Registration</a>
+              <a href="../Teams registration/teams_form.html" class="dropdown-item">Team Registration</a>
+              <a href="../coach registration/coach.html" class="dropdown-item">Coach Registration</a>
+              <a href="../institute registration/finalinstitute.html" class="dropdown-item">Institute Registration</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="cor"></section>
+  <form action="" method="post" enctype="multipart/form-data">
+    <div id="page">
+      <div class="col-md-10 mx-auto my-3">
+        <center>
+          <h2 class="dept-title my-5" style="text-transform: uppercase">
+            Institute Registration
+          </h2>
+        </center>
+
+        <div class="px-3 mb-4 pt-3 apply" style="border: 1px solid #003865">
+          <h3>1. School and Collage Registration:</h3>
+          <div class="InstiteReg">
+            <div class="row">
+              <div class="col-md-4">
+                <label for="i_name" class="col-form-label">Types Of Registration:*</label>
+                <select class="form-control" aria-label="">
+                  <option value="collage">Collage Leval</option>
+                  <option value="school">School Leval</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label for="i_name" class="col-form-label">Types Of School/Collage:*</label>
+                <select class="form-control" aria-label="">
+                  <option value="collage">Collage Leval</option>
+                  <option value="school">School Leval</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label for="i_name" class="col-form-label">Name Of School/Collage:*</label>
+                <select class="form-control" aria-label="">
+                  <option value="collage">a1</option>
+                  <option value="school">a2</option>
+                  <option value="school">a3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="InsReg col-md-4">
+                <label for="m_numberprinciple" class="col-form-label">Name Of Principal:*</label>
+                <input type="text" class="form-control" placeholder="Enter Principal Name" name="principalname"
+                  id="principalname" required="true" pattern="[a-zA-Z][a-zA-Z\s]*" maxlength="20" />
+              </div>
+
+              <div class="col-md-4">
+                <label for="m_numberprinciple1" class="col-form-label">Mobile Number Of Principal:*</label>
+                <input type="text" class="form-control" name="mobile1" id="mobile1" placeholder="Enter Mobile Number"
+                  required="true" pattern="[7-9]{1}[0-9]{9}" />
+              </div>
+              <div class="InsReg col-md-4">
+                <label for="Email" class="col-form-label">Email:*</label>
+                <input type="text" class="form-control" placeholder="Email" name="Email" id="Email" required="true"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="25" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="InsReg col-md-4">
+                <label for="m_number" class="col-form-label">PT Teacher's Name:*</label>
+                <input type="text" class="form-control" placeholder="Enter PT Teacher Name" name="ptteachername"
+                  id="ptteachername" required="true" pattern="[a-zA-Z][a-zA-Z\s]*" maxlength="20" />
+              </div>
+
+              <div class="col-md-4">
+                <label for="m_number1" class="col-form-label">Mobile Number Of PT Teacher:*</label>
+                <input type="text" class="form-control" name="mobile2" id="mobile2" placeholder="Enter Mobile Number"
+                  required="true" pattern="[7-9]{1}[0-9]{9}" />
+              </div>
+            </div>
+
+            <br />
+          </div>
+        </div>
+
+        <div class="px-3 mb-4 pt-3 apply" style="border: 1px solid #003865">
+          <h3>2. Address and Contact Details:</h3>
+          <div class="InsReg">
+            <div class="row">
+              <div class="instituteReg col-md-4">
+                <div class="form-group my-1">
+                  <label for="District">District:*</label>
+                  <input type="District" pattern="[a-zA-Z\s][a-zA-Z\s]*" class="form-control" required="true"
+                    maxlength="20" id="District" placeholder="Enter District Address" />
+                </div>
+              </div>
+
+              <div class="instituteReg col-md-4">
+                <div class="form-group my-1">
+                  <label for="Taluka">Taluka:*</label>
+                  <input type="Taluka" pattern="[a-zA-Z\s][a-zA-Z\s]*" class="form-control" required="true"
+                    maxlength="20" id="Taluka" placeholder="Enter Taluka Address" />
+                </div>
+              </div>
+
+              <div class="instituteReg col-md-4">
+                <div class="form-group my-1">
+                  <label for="Village">Village:*</label>
+                  <input type="Village" pattern="[a-zA-Z\s][a-zA-Z\s]*" class="form-control" required="true"
+                    maxlength="20" id="Village" placeholder="Enter Village Address" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="instituteReg col-md-4">
+                <label for="School/Collage Address" class="col-form-label">
+                  Address Of School/Collage:*</label>
+                <input type="text" class="form-control" placeholder="Enter School/Collage Address"
+                  name="School/Collage Address" id="School/Collage Address" required="true"
+                  pattern="[a-zA-Z\s][a-zA-Z\s]*" maxlength="100" />
+              </div>
+
+              <div class="instituteReg col-md-4">
+                <label for="usr">Pincode *</label>
+                <input type="text" class="form-control" id="contact" required="true" pattern="[6-9]{1}[0-9]{9}"
+                  maxlength="06" placeholder="Enter pincode" />
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <input type="submit" value="Register" class="btn btn-primary btn-lg" />
+    </center>
+    <br />
+
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

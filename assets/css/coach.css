@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    color: #133b70;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.btn {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff !important;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    text-transform: uppercase;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #44107a, #133b70, #ff1361, #fff800);
+    /* box-shadow: 0 4px 1px 0 rgba(229, 66, 10, 0.75); */
+}
+
+.btn:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+}

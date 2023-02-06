@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coach</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/logo.png" alt=""></a>
+            <button justify-content-end class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Registration</a>
+                        <div class="dropdown-menu">
+                            <a href="../player registration/playernew.html" class="dropdown-item">Player
+                                Registration</a>
+                            <a href="../Teams registration/teams_form.html" class="dropdown-item">Team Registration</a>
+                            <a href="../coach registration/coach.html" class="dropdown-item">Coach Registration</a>
+                            <a href="../institute registration/finalinstitute.html" class="dropdown-item">Institute
+                                Registration</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <center>
+            <h2>COACH REGISTRATION</h2>
+        </center>
+        <form action="">
+            <div class="page1 border border-dark p-4 m-4">
+                <h4>1. Personal Details</h4>
+                <div class="form-group">
+
+                    <div class="row">
+                        <div class=" col-md-4">
+                            <label for="c_sname" class="col-form-label">Surname:*</label>
+                            <input type="text" class="form-control" name="c_sname" id="c_sname" required="true"
+                                pattern="[a-zA-Z][a-zA-Z\s]*" required" maxlength="30" />
+                        </div>
+                        <div class=" col-md-4">
+                            <label for="c_fname" class="col-form-label">First name:*</label>
+                            <input type="text" class="form-control" name="c_fname" id="c_fname" required="true"
+                                pattern="[a-zA-Z\s][a-zA-Z\s]*" required maxlength="30" />
+                        </div>
+                        <div class=" col-md-4">
+                            <label for="f_h_name" class="col-form-label">Father/Husband's name:*</label>
+                            <input type="text" class="form-control" name="f_h_name" id="f_h_lname" required="true"
+                                pattern="[a-zA-Z\s][a-zA-Z\s]*" required maxlength="30" />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="radio d-md-flex">
+                                <label for="c_name" class="col-form-label">Gender:*</label>
+                                <div class="form-check mx-md-5 my-2">
+                                    <input type="radio" name="gender" checked id="maleRadio" value="Male"> Male
+                                </div>
+                                <div class="form-check mx-mf-5 my-2">
+                                    <input type="radio" name="gender" id="femaleRadio" value="Female"> Female
+                                </div>
+                                <div class="form-check mx-md-5 my-2">
+                                    <input type="radio" name="gender" id="otherRadio" value="Other"> Other
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Relation:*</label>
+                            <select class="form-select" aria-label="">
+                                <option selected>Choose</option>
+                                <option value="Father">Father</option>
+                                <option value="Husband">Husband</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="birthday" class="col-form-label">Birthday:*</label><br>
+                            <input class="form-control" type="date" id="birthday" name="birthday" required="true" />
+                            <br />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Age(In years):*</label>
+                            <input min="1" max="100" type="number" class="form-control" name="age" id="age"
+                                required="true" required />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Marital Status:*</label>
+
+                            <select class="form-select" aria-label="">
+                                <option selected>Choose</option>
+                                <option value="Married">Married</option>
+                                <option value="Unmarried">Unmarried</option>
+                                <option value="Separated">Separated</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="page2 border border-dark p-4 m-4">
+                <h4>2. Communication Details</h4>
+                <div class="form-group">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkBox"
+                                    onclick="FillAddressInput()">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Same as communication address
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">Communication Address:*</label>
+                            <input type="text" class="form-control" name="caddress" id="caddress" required="true"
+                                required" maxlength="30" />
+                        </div>
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">Permanent Address:*</label>
+                            <input type="text" class="form-control" name="paddress" id="paddress" required="true"
+                                required" maxlength="30" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">State:*</label>
+                            <input pattern="[a-zA-Z][a-zA-Z\s]*" type="text" class="form-control" name="cstate"
+                                id="cstate" required="true" required" maxlength="30" />
+                        </div>
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">State:*</label>
+                            <input pattern="[a-zA-Z][a-zA-Z\s]*" type="text" class="form-control" name="pstate"
+                                id="pstate" required="true" required" maxlength="30" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">District:*</label>
+                            <input type="text" pattern="[a-zA-Z][a-zA-Z\s]*" class="form-control" name="cdis" id="cdis"
+                                required="true" required" maxlength="30" />
+                        </div>
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">District:*</label>
+                            <input type="text" pattern="[a-zA-Z][a-zA-Z\s]*" class="form-control" name="pdis" id="pdis"
+                                required="true" required" maxlength="30" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">City/Taluka:*</label>
+                            <input type="text" pattern="[a-zA-Z][a-zA-Z\s]*" class="form-control" name="ccity"
+                                id="ccity" required="true" required" maxlength="30" />
+                        </div>
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">City/Taluka:*</label>
+                            <input type="text" pattern="[a-zA-Z][a-zA-Z\s]*" class="form-control" name="pcity"
+                                id="pcity" required="true" required" maxlength="30" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">Pincode*</label>
+                            <input type="text" pattern=".{6}" class="form-control" name="cpin" id="cpin" required="true"
+                                required" maxlength="30" />
+                        </div>
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">Pincode*</label>
+                            <input type="text" class="form-control" name="ppin" id="ppin" required="true" required"
+                                maxlength="30" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Mobile Number 1(Whatsapp number)</label>
+                            <input type="text" class="form-control" name="mobile1" id="mobile1" required="true"
+                                pattern="[7-9]{1}[0-9]{9}">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Mobile Number 2(Whatsapp number)</label>
+                            <input type="text" class="form-control" name="mobile2" id="mobile2" required="true"
+                                pattern="[7-9]{1}[0-9]{9}">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <label for="c_name" class="col-form-label">Email:*</label>
+                            <input type="email" class="form-control" name="email" id="email" required="true" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Nationality:*</label>
+                            <input type="text" class="form-control" name="nation" id="nation" required="true" required"
+                                maxlength="30" />
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="page3 border border-dark p-4 m-4">
+                <h4>3. Qualification Details</h4>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Regular qualification:*</label>
+                            <select class="form-select" aria-label="">
+                                <option selected>Choose</option>
+                                <option value="HSC">HSC</option>
+                                <option value="DIPLOMA">DIPLOMA</option>
+                                <option value="GRADUATE">GRADUATE</option>
+                                <option value="POST GRADUATE">POST GRADUATE</option>
+                                <option value="OTHERS">OTHERS</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Course name:*</label>
+                            <input type="text" class="form-control" name="course" id="course" required="true" required"
+                                maxlength="30" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Institute Type:*</label>
+                            <select class="form-select" aria-label="">
+                                <option selected>Choose</option>
+                                <option value="Government approved University">Government approved University/College
+                                </option>
+                                <option value="Private uni/clg">Private University/College</option>
+                                <option value="School">School</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Institute name:*</label>
+                            <input type="text" class="form-control" name="Institute" id="Institute" required="true"
+                                required" maxlength="30" pattern="[a-zA-Z\s][a-zA-Z\s]*" />
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="page4 border border-dark p-4 m-4">
+                <h4>4. Game Qualification Details</h4>
+                <div class="form-group">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Game name:*</label>
+                            <input type="text" class="form-control" name="Game" id="Game" required="true" required"
+                                maxlength="30" pattern="[a-zA-Z\s][a-zA-Z\s]*" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Game Experience(in years):*</label>
+                            <input type="number" class="form-control" name="Experience" id="Experience" required="true"
+                                required" min="0" max="100" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Game Qualification:*</label>
+                            <input type="text" class="form-control" name="gquali" id="gquali" required="true" required"
+                                maxlength="30" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Game Course name:*</label>
+                            <input type="text" class="form-control" name="gcourse" id="gcourse" required="true"
+                                required" maxlength="30" pattern="[a-zA-Z\s][a-zA-Z\s]*" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Institute Type:*</label>
+                            <select class="form-select" aria-label="">
+                                <option selected>Choose</option>
+                                <option value="Government approved University">Government
+                                </option>
+                                <option value="Private uni/clg">Private</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Institute name:*</label>
+                            <input type="text" class="form-control" name="gInstitute" id="gInstitute" required="true"
+                                required" maxlength="30" pattern="[a-zA-Z\s][a-zA-Z\s]*" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="page5 border border-dark p-4 m-4">
+                <h4>5. Experience Details
+                </h4>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Current Status:*</label>
+                            <select class="form-select" aria-label="">
+                                <option selected>Choose</option>
+                                <option value="business">Business</option>
+                                <option value="job">Job</option>
+                                <option value="Student">Student</option>
+                                <option value="House Wife">House Wife</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Company/Institute name:*</label>
+                            <input type="text" class="form-control" name="company" id="company" required="true"
+                                required" maxlength="30" pattern="[a-zA-Z\s][a-zA-Z\s]*" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Post/Course name:*</label>
+                            <input type="text" class="form-control" name="post_course" id="post_course" required="true"
+                                required" maxlength="30" pattern="[a-zA-Z\s][a-zA-Z\s]*" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Working year experience(for fresher:0)
+                                :*</label>
+                            <input type="number" class="form-control" name="workExpe" id="workExpe" required="true"
+                                required" min="0" max="100" />
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="radio d-md-flex">
+                                <label for="c_name" class="col-form-label">Are you government employee?:*</label>
+                                <div class="form-check mx-md-5 my-2">
+                                    <input type="radio" name="Gov_employee" id="Yes" value="Yes"> Yes
+                                </div>
+                                <div class="form-check mx-mf-5 my-2">
+                                    <input checked type="radio" name="Gov_employee" id="No" value="No">No
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="page6 border border-dark p-4 m-4">
+                <h4>6. Fitness Body Details
+                </h4>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Height(in cm)
+                                :*</label>
+                            <input type="text" pattern="[0-9]+([,\.][0-9]+)?" class="form-control" name="height"
+                                id="height" required="true" required" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label">Weight(in kg)
+                                :*</label>
+                            <input type="text" pattern="[0-9]+([,\.][0-9]+)?" class="form-control" name="weight"
+                                id="weight" required="true" required" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="c_name" class="col-form-label"> Blood Group:*</label>
+                            <select class="form-select" aria-label="">
+                                <option selected>Choose</option>
+                                <option value="A+">A+</option>
+                                <option value="B+">B+</option>
+                                <option value="O+">O+</option>
+                                <option value="AB+">AB+</option>
+                                <option value="A-">A-</option>
+                                <option value="B-">B-</option>
+                                <option value="O-">O-</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label"> In past if you have any operation then mention
+                                it:
+                            </label>
+                            <input type="text" class="form-control" name="Operation" id="Operation" />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="radio d-md-flex">
+                                <label for="c_name" class="col-form-label">Physical Disability
+                                    :*</label>
+                                <div class="form-check mx-md-5 my-2">
+                                    <input type="radio" name="Physical_desablity" id="Yes" value="Yes"> Yes
+                                </div>
+                                <div class="form-check mx-mf-5 my-2">
+                                    <input checked type="radio" name="Physical_desablity" id="No" value="No">No
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Any disease:
+                            </label>
+                            <input pattern="[a-zA-Z\s][a-zA-Z\s]*" type="text" class="form-control" name="disease"
+                                id="disease" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">T-Shirt Size:*</label>
+                            <select class="form-select" aria-label="">
+                                <option selected>Choose</option>
+                                <option value="s">s</option>
+                                <option value="m">m</option>
+                                <option value="l">l</option>
+                                <option value="xl">xl</option>
+                                <option value="xxl">xxl</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="page7 border border-dark p-4 m-4">
+                <h4>7. Document upload details
+                </h4>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Adhar Card:*</label><br>
+                            <input type="file" name="studentphoto" id="Adhar" class="Adhar" required
+                                accept=".png, .jpg, .jpeg, .pdf">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Current full-length photo:*</label><br>
+                            <input type="file" name="studentphoto" id="Photo" class="Photo" required
+                                accept=".png, .jpg, .jpeg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Qualification certificate:*</label><br>
+                            <input type="file" name="studentphoto" id="Quali_certi" class="Quali_certi" required
+                                accept=".png, .jpg, .jpeg, .pdf">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="c_name" class="col-form-label">Game Qualification certificate
+                                :*</label><br>
+                            <input type="file" name="studentphoto" id="game_quali_certi" class="game_quali_certi"
+                                required accept=".png, .jpg, .jpeg, .pdf">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center> <input type="submit" value="Register" class="btn btn-primary btn-lg"></center>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

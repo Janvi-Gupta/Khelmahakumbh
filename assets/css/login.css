@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Roboto&display=swap');
+
+body {
+    /* background-image: url('images/background.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    background-color: #f0f0f0;
+}
+
+.btn {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff !important;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    text-transform: uppercase;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #44107a, #133b70, #ff1361, #fff800);
+    /* box-shadow: 0 4px 1px 0 rgba(229, 66, 10, 0.75); */
+}
+
+.btn:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #133b70 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    /* font-size: 190px; */
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
